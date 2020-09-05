@@ -34,6 +34,10 @@ func main() {
 		panic(err)
 	}
 
+	if a, err := f(); a != 0 && err != nil { // OK
+		panic(err)
+	}
+
 	_, err = f() // want "error received but not handled"
 
 	b := errors.New("foo") // want "error received but not handled"
