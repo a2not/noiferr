@@ -9,9 +9,8 @@ import (
 	"golang.org/x/tools/go/ssa"
 )
 
-const doc = "noiferr is ..."
+const doc = "noiferr is static analysis tool which detects if received errors are handled with if statement"
 
-// Analyzer is ...
 var Analyzer = &analysis.Analyzer{
 	Name: "noiferr",
 	Doc:  doc,
@@ -65,7 +64,6 @@ func isHandledWithCond(callInstr *ssa.Call) bool {
 	return true
 }
 
-// func errorVarHandeld(binop *ssa.BinOp) bool {
 func errorVarHandled(instrs *[]ssa.Instruction) bool {
 	for _, instr := range *instrs {
 		switch instr := instr.(type) {
