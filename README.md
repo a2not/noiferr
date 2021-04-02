@@ -4,7 +4,7 @@ Static analysis tool for Go that checks if errors are properly handled with cond
 
 ## Install
 ```
-go get -u github.com/Khdbble/noiferr
+go get -u github.com/a2not/noiferr
 ```
 
 ## what this does
