@@ -4,4 +4,7 @@ test: format
 format:
 	goimports -w noiferr.go
 
-.PHONY: test format
+build:
+	cd ./cmd/noiferr && go build -o noiferr
+
+.PHONY: test format build
