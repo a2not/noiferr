@@ -3,7 +3,7 @@ package noiferr_test
 import (
 	"testing"
 
-	"github.com/Khdbble/noiferr"
+	"github.com/a2not/noiferr"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 
@@ -12,4 +12,3 @@ func TestAnalyzer(t *testing.T) {
 	testdata := analysistest.TestData()
 	analysistest.Run(t, testdata, noiferr.Analyzer, "a")
 }
-
