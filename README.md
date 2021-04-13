@@ -1,6 +1,9 @@
 # noiferr
 
+[![Go](https://github.com/a2not/noiferr/actions/workflows/go.yml/badge.svg)](https://github.com/a2not/noiferr/actions/workflows/go.yml)
+
 Static analysis tool for Go that checks if errors are properly handled with conditional branch
+
 
 ## Install
 ```
